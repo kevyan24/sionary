@@ -10,7 +10,7 @@ header {
   grid-template-columns: 8.3125rem  auto;
   padding: 1rem 0;
   align-items: center;
-  max-width: 75rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: #000000;
+  color: #393939;
   font-weight: 800;
   font-size: 1.2rem;
 }
@@ -40,7 +40,7 @@ header nav a:hover {
 }
 
 main {
-  max-width: 75rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ main {
 
 .hero button {
   background-color: #ffffff;
-  color: #000000;
+  color: #393939;
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1.3rem;
@@ -83,17 +83,20 @@ main {
 .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 1rem 0;
+  background-color: #393939;
+  border-radius: 0.5rem;
 }
 
 .section {
   margin: 0;
-  padding: 3rem 2rem;
-
+  padding: 2rem 2rem;
 }
 
 .section h2 {
   font-size: 2rem;
   margin: 1rem;
+  color: #ffffff;
 }
 
 .section p {
@@ -116,8 +119,13 @@ main {
   border-radius: 0.25rem;
 }
 
+.section button:hover {
+  background-color: #393939;
+  transition: background-color 0.3s;
+}
+
 .section blockquote {
-  background-color: #f8f9fa;
+  color: #ffffff;
   padding: 1rem;
   border-left: 5px solid #00a1b6;
   margin: 1rem 0;
@@ -136,4 +144,11 @@ footer p {
   margin: 0;
   font-size: 1rem;
   padding-bottom: 1rem;
+}
+
+.one {
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding-bottom: 1rem;
+  line-height: 2rem;
 }
