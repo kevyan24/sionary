@@ -41,18 +41,9 @@ header nav a:hover {
 
 .ham-btn {
   display: none;
-  grid-column: 2 / 3;
-  justify-self: end;
 }
 
 @media (max-width: 768px) {
-
-  header,
-  .hero,
-  section.section {
-    margin: 0 1rem;
-  }
-
   header nav {
     display: none;
   }
@@ -66,6 +57,9 @@ header nav a:hover {
     border: none;
     font-size: 2rem;
     line-height: 2.5rem;
+    grid-column: 2 / 3;
+    justify-self: end;
+    margin-right: 1rem;
   }
 
   .ham-btn:hover {
@@ -97,13 +91,9 @@ header nav a:hover {
     text-align: left;
   }
 
-  footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 0;
+  header img {
+    margin-left: 1rem;
   }
-
 }
 
 main {
