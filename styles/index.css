@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  cursor: default;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 8.3125rem  auto;
+  padding: 1rem 0;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+header img {
+  height: 50px;
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+header nav a:hover {
+  cursor: pointer;
+  color: #009ABF;
+}
+
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #00a1b6;
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.hero p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.hero button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin: 2rem 0;
+  border-radius: 0.25rem;
+}
+
+.hero button:hover {
+  background-color: #00a1b6;
+  color: #ffffff;
+  transition: background-color 0.3s ;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.section {
+  margin: 0;
+  padding: 3rem 2rem;
+
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #333333;
+  background-color: #00a1b6;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.section button {
+  background-color: #00a1b6;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.section blockquote {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-left: 5px solid #00a1b6;
+  margin: 1rem 0;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #00a1b6;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
