@@ -7,7 +7,7 @@
 
 header {
   display: grid;
-  grid-template-columns: 8.3125rem  auto;
+  grid-template-columns: 8.3125rem auto;
   padding: 1rem 0;
   align-items: center;
   max-width: 70rem;
@@ -39,6 +39,73 @@ header nav a:hover {
   color: #009ABF;
 }
 
+.ham-btn {
+  display: none;
+  grid-column: 2 / 3;
+  justify-self: end;
+}
+
+@media (max-width: 768px) {
+
+  header,
+  .hero,
+  section.section {
+    margin: 0 1rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .ham-btn {
+    display: grid;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #393939;
+    background-color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .ham-btn:hover {
+    cursor: pointer;
+    color: #009ABF;
+  }
+
+  .ham-btn::after {
+    content: "\2630";
+  }
+
+  .ham-btn.show::after {
+    content: "\2715";
+  }
+
+  header nav.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.6875rem;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1rem 0;
+    align-items: flex-start;
+  }
+
+  header nav.show a {
+    padding: 0.5rem 1rem;
+    text-align: left;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+}
+
 main {
   max-width: 70rem;
   margin: 0 auto;
@@ -48,7 +115,6 @@ main {
   background-color: #00a1b6;
   text-align: center;
   padding: 5rem 2rem;
-  border-radius: 0.5rem;
 }
 
 .hero h1 {
@@ -71,26 +137,24 @@ main {
   font-size: 1.3rem;
   cursor: pointer;
   margin: 2rem 0;
-  border-radius: 0.25rem;
 }
 
 .hero button:hover {
   background-color: #00a1b6;
   color: #ffffff;
-  transition: background-color 0.3s ;
+  transition: background-color 0.3s;
 }
 
 .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 1rem 0;
-  background-color: #393939;
-  border-radius: 0.5rem;
 }
 
 .section {
   margin: 0;
   padding: 2rem 2rem;
+  background-color: #393939;
 }
 
 .section h2 {
@@ -103,7 +167,6 @@ main {
   font-size: 1.2rem;
   color: #333333;
   background-color: #00a1b6;
-  border-radius: 0.25rem;
   padding: 2rem;
   color: #ffffff;
 }
@@ -116,7 +179,6 @@ main {
   font-size: 1rem;
   cursor: pointer;
   margin-top: 1rem;
-  border-radius: 0.25rem;
 }
 
 .section button:hover {
