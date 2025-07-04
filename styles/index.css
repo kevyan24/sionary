@@ -208,3 +208,71 @@ footer p {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.search-bar input {
+  width: 80%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #00a1b6;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #393939;
+}
+
+/* Estilos para las tarjetas de documento */
+.library {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.document-card {
+  background-color: #393939;
+  padding: 1.5rem;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.document-card:hover {
+  cursor: default;
+}
+
+.document-card h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.document-card p {
+  background-color: #00a1b6;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+}
+
+.document-card a {
+  text-decoration: none;
+  background-color: #00a1b6;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.document-card a:hover {
+  background-color: #393939;
+  transition: background-color 0.3s;
+}
