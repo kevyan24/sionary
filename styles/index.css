@@ -204,3 +204,7 @@ footer p {
   padding-bottom: 1rem;
   line-height: 2rem;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
