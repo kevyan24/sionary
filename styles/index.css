@@ -209,7 +209,6 @@ footer p {
   display: none;
 }
 
-/* Estilos para la barra de búsqueda */
 .search-bar {
   text-align: center;
   margin: 2rem 0;
@@ -230,7 +229,6 @@ footer p {
   border-color: #393939;
 }
 
-/* Estilos para las tarjetas de documento */
 .library {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
